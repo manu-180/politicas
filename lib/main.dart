@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const PrivacyPolicyApp());
+  runApp(const MyApp());
 }
 
-class PrivacyPolicyApp extends StatelessWidget {
-  const PrivacyPolicyApp({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
