@@ -41,42 +41,60 @@ class PrivacyPolicyScreen extends StatelessWidget {
             ),
             const SizedBox(height: 10),
             const Text(
-              'Última actualización: [Fecha]',
+              'Última actualización: 18/05/2025',
               style: TextStyle(fontSize: 16, fontStyle: FontStyle.italic),
             ),
             const SizedBox(height: 20),
-            _buildSection('1. Información que Recopilamos', [
-              '• Nombre y apellido',
+            _buildSection('1. ¿Qué datos personales recopilamos?', [
               '• Correo electrónico',
+              '• Nombre completo',
               '• Número de teléfono',
-              '• Información de suscripciones gestionadas a través de Google Play y Apple App Store',
-              '• Datos de uso para mejorar la experiencia del usuario',
+              '• Sexo',
+              '• Rubro (actividad del usuario)',
+              '• Nombre del grupo o entorno (“taller”)',
+              '• ID único de usuario',
+              '• Fecha de creación de cuenta',
+              '• Tipo de usuario (admin o alumno)',
             ]),
-            _buildSection('2. Uso de la Información', [
-              '• Para procesar pagos de suscripciones en Google Play y App Store.',
-              '• Para enviarte actualizaciones, soporte técnico y notificaciones importantes.',
+            _buildSection('2. ¿Para qué usamos estos datos?', [
+              '• Para crear y gestionar tu cuenta.',
+              '• Para mostrar el contenido correspondiente a tu perfil.',
+              '• Para enviar notificaciones automáticas sobre tus clases.',
+              '• Para separar correctamente los grupos de usuarios.',
+              '• Para activar o desactivar funciones según tu tipo de cuenta.',
             ]),
-            _buildSection('3. Métodos de Pago y Suscripciones', [
-              '• Assistify utiliza los sistemas de pago de Google Play y Apple App Store para gestionar suscripciones.',
-              '• Nosotros no almacenamos directamente la información de pago.',
+            _buildSection('3. ¿Dónde se almacenan tus datos?', [
+              '• Todos los datos se almacenan en servidores seguros de Supabase.',
+              '• Assistify no almacena datos sensibles en tu dispositivo.',
             ]),
-            _buildSection('4. Cumplimiento con Regulaciones', [
-              '• Cumplimos con RGPD para usuarios en la Unión Europea.',
-              '• Cumplimos con CCPA y CalOPPA para usuarios en EE.UU.',
-              '• Cumplimos con las políticas de Apple y Google en relación con pagos y suscripciones.',
+            _buildSection('4. ¿Compartimos tu información?', [
+              '• No compartimos tus datos personales con terceros con fines comerciales.',
+              '• Usamos Twilio para enviarte mensajes por WhatsApp. Solo se transmite tu número en el momento del envío.',
             ]),
-            _buildSection('5. Contacto', [
-              'Si tienes preguntas, contáctanos en:',
-              '📩 Email: manunv97@gmail.com',
+            _buildSection('5. ¿Necesitás cuenta para usar la app?', [
+              '• Sí. Es necesario registrarse para acceder a las funcionalidades.',
+              '• La app necesita conocer tu entorno para mostrar el contenido correcto.',
+            ]),
+            _buildSection('6. Tus derechos', [
+              '• Podés solicitar acceso, corrección o eliminación de tus datos.',
+              '• Para hacerlo, escribinos a: soporte@assistify.lat',
+            ]),
+            _buildSection('7. Cambios en esta política', [
+              '• Podemos actualizar esta política. Los cambios se notificarán en la app o por email.',
+            ]),
+            _buildSection('8. Contacto', [
+              '📩 Email: soporte@assistify.lat',
+              '🌐 Web: www.assistify.lat',
             ]),
             const SizedBox(height: 30),
             Center(
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  // Acción si querés volver o cerrar
+                },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.blueAccent,
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
+                  padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
                 ),
                 child: const Text(
                   'Aceptar y Continuar',
